@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>CSS assignment 2</title>
+	<style>
+	body{
+		background-color: #FF0000;
+		color:white;
+		display:flex;
+		flex-direction:column;
+		align-items:center;
+		margin:0;
+		padding:0;
+		min-height:100vh;
+	}
+	.form{
+		background-color: white;
+		color:black;
+		margin:50px auto;
+		padding:20px;
+		text-align:left;
+		width:450px;
+		height:1100px;
+		box-shadow: 0 4px 8px black;
+		border-radius: 8px;
+	}
+	.button{
+		background-color: #FF0000;
+		color:white;
+		width:100%;
+		height:50px;
+		text-align:center;
+	}
+	input, select, textarea{
+		padding:10px;
+		margin-top:5px;
+		margin-bottom:15px;
+		border:1px solid black;
+		border-radius:4px;
+	}
+	</style>
+</head>
+<body>
+	<h1 style="text-align:center">TAS Eduaction Center's Survey Form</h1>
+	<div class="form">
+	<label for="name">Name</label><br>
+	<input type="text" id="name" name="name" placeholder="Enter your name" style="width:97%"><br><br>
+	<label for="email">Email</label><br>
+	<input type="text" id="email" name="email" placeholder="Enter your email" style="width:97%"><br><br>
+	<label for="age">Age</label><br>
+	<input type="text" id="age" name="age" placeholder="Enter your age" style="width:97%"><br><br>
+	<label for="option">Which option best describes you?</label><br>
+	<select name="option" id="option" style="width:100%;>
+		<option value="student">student</option>
+		<option value="employee">employee</option>
+		<option value="business man">business man</option>
+	</select><br><br>
+	<label for="recommend">Would you recommend GeedsforGeeks to a friend?</label><br>
+	<input type="radio" id="recommend" name="recommend" value="Yes">
+	<label for="Yes">Yes</label><br>
+	<input type="radio" id="recommend" name="recommend" value="No">
+	<label for="No">No</label><br>
+	<input type="radio" id="recommend" name="recommend" value="Maybe">
+	<label for="Maybe">Maybe</label><br><br>
+	<label for="language">Languages and Frameworks known (Check all that apply)</label><br>
+	<input type="checkbox" id="lan1" name="lan1" value="C">
+	<label for="lan1">C</label><br>
+	<input type="checkbox" id="lan2" name="lan2" value="C++">
+	<label for="lan2">C++</label><br>
+	<input type="checkbox" id="lan3" name="lan3" value="C#">
+	<label for="lan3">C#</label><br>
+	<input type="checkbox" id="lan4" name="lan4" value="Java">
+	<label for="lan4">Java</label><br>
+	<input type="checkbox" id="lan5" name="lan5" value="Python">	
+	<label for="lan5">Python</label><br>
+	<input type="checkbox" id="lan6" name="lan6" value="JavaScript">
+	<label for="lan6">JavaScript</label><br>
+	<input type="checkbox" id="lan7" name="lan7" value="React">
+	<label for="React">React</label><br>
+	<input type="checkbox" id="lan8" name="lan8" value="Angular">
+	<label for="Angular">Angular</label><br>
+	<input type="checkbox" id="lan9" name="lan9" value="Django">		
+	<label for="Django">Django</label><br>
+	<input type="checkbox" id="lan10" name="lan10" value="Spring">
+	<label for="Spring">Spring</label><br><br>	
+	<label for="comment">Any comments or suggestions</label><br>
+	<textarea id="comment" name="comment" rows="4" column="200" style="width:97%"></textarea><br><br>
+	<button class="button">Submit</button>
+	</div>
+</body>
+</html>
